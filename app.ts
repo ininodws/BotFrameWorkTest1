@@ -15,8 +15,10 @@ app.listen(process.env.port || process.env.PORT || 3978, '::', () => {
 });
 // Create chat bot
 const connector = new builder.ChatConnector({
-    appId: process.env.MICROSOFT_APP_ID,
-    appPassword: process.env.MICROSOFT_APP_PASSWORD
+    //appId: process.env.MICROSOFT_APP_ID,
+    //appPassword: process.env.MICROSOFT_APP_PASSWORD
+    appId:"5a8f6a4c-8ea2-4ded-bcc3-8ee3a7f4556d",
+    appPassword:"mvdvHIJY6259%^gldGNZ2$}"
 });
 
 const bot = new builder.UniversalBot(connector, [
